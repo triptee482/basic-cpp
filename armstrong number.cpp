@@ -14,14 +14,16 @@ int power(int n, int m)
 
 int main()
 {
-    int n,temp,total;
+    int n, temp, total, length;
     std::cout<<"enter a number: ";
     std::cin>>n;
     temp=n;
     total=0;
+    length = std::to_string(n).length();
+
 
     while(temp != 0){
-        total= total + power(temp % 10, 3);
+        total= total + power(temp % 10, length);
         temp= temp / 10;
     }
 
