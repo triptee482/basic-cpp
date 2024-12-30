@@ -1,7 +1,8 @@
 #include <iostream>
-int power(int n, int m)
+long long power(int n, int m)
 {
-    int i, temp;
+    int i;
+    long long temp;
     temp = 1;
 
     for (i = 1; i <= m; i++)
@@ -14,7 +15,8 @@ int power(int n, int m)
 
 int main()
 {
-    int n, temp, total, length;
+    long long n, temp, total;
+    int length;
     std::cout<<"enter a number: ";
     std::cin>>n;
     temp=n;
@@ -28,9 +30,9 @@ int main()
     }
 
     if(n == total){
-        std::cout<<n<<" is a armstong number";
+        std::cout<<n<<" is an armstong number";
     }else{
-        std::cout<<n<<" is not a armstrong number";
+        std::cout<<n<<" is not an armstrong number";
     }
 
     return 0;
